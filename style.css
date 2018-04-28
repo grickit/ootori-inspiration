@@ -1,0 +1,92 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #222222;
+}
+
+#inner-frame {
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+}
+
+#inner-image {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#cover-frame {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 65px solid rgba(20, 20, 20, 0.8);
+	background: transparent;
+}
+
+#controls {
+	padding: 20px;
+	z-index: 20;
+	position: absolute;
+	background-color: rgba(8, 8, 8, 0.8);
+	width: 100vw;
+	bottom: 0;
+}
+
+#control-duration-container,
+#control-volume-container {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 500px;
+	min-width: 200px;
+	height: 50px;
+  padding: 10px;
+	margin: 5px;
+	color: #AAAAAA;
+}
+
+#control-duration {
+	width: 100%;
+}
+
+#control-pause {
+	height: 50px;
+  min-width: 70px;
+  padding: 10px;
+	margin: 5px;
+
+	display: inline-block;
+  text-align: center;
+  background-color: #999999;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  /* WTF Linux Chrome is pulling font-size and font-family from OS appearance settings */
+  font-size: inherit;
+  font-family: inherit;
+	user-select: none;
+	border: none !important;
+}
+
+#control-pause:hover {
+  background-color: #AAAAAA;
+}
+
+#control-pause:active {
+  box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ootori Inspiraton 2</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<audio id="music" src="music/Chicago - You're the Inspiration.mp3" preload="auto"></audio>
+		<div id="container">
+			<div id="outer-frame">
+				<div id="inner-frame">
+					<div id="inner-image"></div>
+				</div>
+				<div id="cover-frame"></div>
+			</div>
+			<div id="controls">
+
+				<button id="control-pause">Play</button>
+
+				<div id="control-duration-container">
+					<input id="control-duration" type="range" step="1" oninput="music.html.currentTime = this.value">
+					<div id="control-duration-label">
+						<span id="control-duration-current"></span> / <span id="control-duration-max"></span>
+					</div>
+				</div>
+			
+				<div id="control-volume-container">
+					<input id="control-volume" type="range" step="1" oninput="music.volume = this.value">
+					<div id="control-volume-label">
+						<span id="control-volume-current"></span> / <span id="control-volume-max"></span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</body>
+	<script src="scripts/classes/Audio.js"></script>
+	<script src="scripts/classes/Image.js"></script>	
+	<script src="scripts/classes/PositionSlider.js"></script>
+	<script src="scripts/classes/VolumeSlider.js"></script>
+	<script src="scripts/ootori.js"></script>
+</html>
