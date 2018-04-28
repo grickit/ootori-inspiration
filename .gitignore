@@ -1,0 +1,4 @@
+public/images/*.jpg
+public/music/*.mp3
+logs/*
+tmp/*
